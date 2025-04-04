@@ -30,7 +30,7 @@ public class Car {
             name = "car_images",
             joinColumns = @JoinColumn(name = "car_id")
     )
-    @Column(name = "image")
+    @Column(name = "images")  // Changed from "image" to "images" to match your database
     private List<String> images = new ArrayList<>();
 
     @ElementCollection
